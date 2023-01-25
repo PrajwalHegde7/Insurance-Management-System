@@ -15,11 +15,17 @@ session_start();
 //check if user is already logged in
 if(isset($_SESSION['agentID'])){
 	//user already logged in
-	header("location: index.php");
+	// header("location: index.php");
+	unset($_SESSION['agentID']);
+	header("location: login.php");
+	exit;
 }
 
 if(isset($_SESSION['admin'])){
-	header("location: admin.php");
+	// header("location: admin.php");
+	unset($_SESSION['admin']);
+	header("location: admin_login.php");
+	exit;
 }
 
 //check for login form submission
@@ -44,7 +50,7 @@ if(isset($_POST['login'])){
 		//invalid credentials
 		$errorMsg = "Invalid agentID or password!";
 	}
-	
+	unset($_POST['login']);
 }
 
 //close connection
