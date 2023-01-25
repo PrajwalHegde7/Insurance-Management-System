@@ -70,14 +70,14 @@ if(isset($_POST['adminlogin'])){
 	<form calss="needs-validation" action="admin_login.php" method="post">
 		<div class="form-group was-validated">
 			<!-- <label class="form-label" for="username">Username:</label> -->
-			<input class="form-control" type="text" id="username" name="username" value="admin" placeholder="Username" required>
+			<input class="form-control" type="text" id="username" name="username" value="" placeholder="Username" required>
 			<div class="invalid-feedback">
 				Please enter your agent ID
 			</div>
 		</div>
 		<div class="form-group was-validated">
 			<!-- <label class="form-label" for="password">Password:</label> -->
-			<input class="form-control" type="password" id="password" name="passwd" value="admin@123" placeholder="Password" required>
+			<input class="form-control" type="password" id="password" name="passwd" value="" placeholder="Password" required>
 			<div class="invalid-feedback">
 				Please enter your password
 			</div>

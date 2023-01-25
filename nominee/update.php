@@ -88,7 +88,7 @@ $row = mysqli_fetch_object($result)
                 </div>
 				<div class = "form-group">    
                     <!-- <label>Contact Number: </label>     -->
-                    <input class="form-control" type = "text" name = "contactNumber" value = "<?php echo $row->ContactNo ?>" placeholder="Contact Number"  required pattern="[0-9]{10}" />    
+                    <input class="form-control" type = "text" name = "contactNumber" value = "<?php echo $row->ContactNo; ?>" placeholder="Contact Number"  required pattern="[0-9]{10}" />    
                 </div>
 				<div class = "form-group">    
                     <input class="btn btn-primary w-100" type = "submit" name="update" value = "Update"/>    

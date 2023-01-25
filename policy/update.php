@@ -55,7 +55,7 @@ $row=mysqli_fetch_object($result);
                 </div>
                 <div class = "form-group">    
                     <label>Customer Number:</label>    
-                    <select class="form-control" name = "customerID" disabled required>
+                    <select class="form-control" name = "customerID" readonly required>
 						<option value = "<?php echo $row->customerID?>"><?php echo $row->customerID?></option>
 						</select>
                 </div>    
@@ -63,13 +63,13 @@ $row=mysqli_fetch_object($result);
                 {?>
                     <div class = "form-group">    
                     <label>Agent Code:</label>    
-                    <select class="form-control" name = "agentID" disabled required>
+                    <select class="form-control" name = "agentID" readonly required>
 						<option value = "<?php echo $row->agentID?>"><?php echo $row->agentID?></option>
 					</select>
                 </div>  <?php }?>
 				<div class = "form-group">    
 					<label>Scheme:</label>    
-                    <select class="form-control" name = "schemeID" disabled required>
+                    <select class="form-control" name = "schemeID" readonly required>
 						<option value = "<?php echo $row->schemeID?>"><?php echo $row->schemeID?></option>
 					</select>
                 </div>

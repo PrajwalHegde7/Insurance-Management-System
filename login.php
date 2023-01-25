@@ -95,14 +95,14 @@ if(isset($_POST['login'])){
 		<!-- <div class="container"> -->
 			<div class = "form-group was-validated">
 				<!-- <label class="form-label" for="agentID">agentID:</label> -->
-				<input class="form-control" type="text" id="agentID" name="agentID" value="123abc123" placeholder="Agent ID" required>
+				<input class="form-control" type="text" id="agentID" name="agentID" value="" placeholder="Agent ID" required>
 				<div class="invalid-feedback">
 					Please enter your agent ID
 				</div>
 			</div>
 			<div class = "form-group was-validated">
 				<!-- <label class="form-label" for="pasword">Password:</label> -->
-				<input class="form-control" type="password" id="pasword" name="passwd" value="12345678" placeholder="Password" required>
+				<input class="form-control" type="password" id="pasword" name="passwd" value="" placeholder="Password" required>
 				<div class="invalid-feedback">
 					Please enter your password
 				</div>

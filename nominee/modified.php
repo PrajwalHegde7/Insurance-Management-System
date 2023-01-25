@@ -36,7 +36,7 @@ if(isset($_POST['update'])){
 	$g=$_POST['Gender'];
 	$a=$_POST['Address'];
 	$con=$_POST['contactNumber'];
-    $query="update nominee set Fname='$fn',Mname='$mn',Lname='$ln',Gender='$g',Relation='$r',DOB='$d',Address='$a',ContactNo=$con where customerID=$cid and nomineeID=$nid";
+    $query="update nominee set Fname='$fn',Mname='$mn',Lname='$ln',Gender='$g',Relation='$r',DOB='$d',Address='$a', ContactNo=$con where customerID=$cid and nomineeID=$nid";
 	mysqli_query($conn,$query) or die($query."Can't Connect to Query...");
 	unset($_POST['update']);
     $_GET['nomid']=$cid;
@@ -84,7 +84,7 @@ if(isset($_GET['nomid'])){
 	</nav>
     <div class="container-fluid" style="padding-top: 12vh;">
 	<div class="login" style="width:100%; height:85%; overflow-y: scroll;">
-		<h2 class="text-center mb-3">Customer Data</h2>
+		<h2 class="text-center mb-3">Nominee Data</h2>
 		<table class="table table-bordered border-success table-striped table-hover align-middle">
 			<!-- <table id="example" class="table table-striped" style="width:100%;"></table> -->
 			<thead class="table-dark align-middle">

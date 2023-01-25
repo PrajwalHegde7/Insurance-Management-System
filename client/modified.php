@@ -164,7 +164,7 @@ $result = mysqli_query($conn,$sql);
 							echo "Dead";?>  
 				</td>  
 				<td>  
-					<?php if($row->Mother_Status == 'S')
+					<?php if($row->Marital_status == 'S')
 							echo "Single";
 							else
 							echo "Married";?>  

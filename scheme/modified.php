@@ -63,7 +63,7 @@ $result = mysqli_query($conn,$sql);
 	</nav>
 <div class="container-fluid" style="padding-top: 12vh;">
 	<div class="login" style="width:100%; height:85%; overflow-y: scroll;">
-		<h2 class="text-center mb-3">Customer Data</h2>
+		<h2 class="text-center mb-3">Scheme Data</h2>
 		<table class="table table-bordered border-success table-striped table-hover align-middle">    
 			<thead class="table-dark align-middle">
 				<tr>    
