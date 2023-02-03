@@ -28,8 +28,11 @@ if(isset($_SESSION['empty'])){
 		<div class="logo">
 			<p>Insurance Management System</p>
 		</div>
-		<ul>
-			<li><a href="../login.php">Back</a></li>    
+		<ul><?php if(isset($_SESSION['agentID'])){
+			echo '<li><a href="../index.php">Back</a></li>';
+        } else{
+            echo '<li><a href="../admin.php">Back</a></li>';
+        }?>    
 		</ul>
 	</nav>
     <div class = "container">

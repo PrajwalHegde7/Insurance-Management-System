@@ -58,7 +58,11 @@ $result = mysqli_query($conn,$sql);
 			<p>Insurance Management System</p>
 		</div>
 		<ul>
-			<li><a href="../login.php">Back</a></li>    
+		<?php if(isset($_SESSION['agentID'])){
+			echo '<li><a href="../index.php">Back</a></li>';
+        } else{
+            echo '<li><a href="../admin.php">Back</a></li>';
+        }?>    
 		</ul>
 	</nav>
 <div class="container-fluid" style="padding-top: 12vh;">

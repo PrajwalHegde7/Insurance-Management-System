@@ -22,7 +22,7 @@ if(! isset($_SESSION['admin'])){
 			<p>Insurance Management System</p>
 		</div>
 		<ul>
-			<li><a href="../login.php">Back</a></li>    
+			<li><a href="../admin.php">Back</a></li>    
 		</ul>
 	</nav>
 <div class="container">	

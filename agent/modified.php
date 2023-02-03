@@ -72,7 +72,7 @@ $result = mysqli_query($conn,$sql);
 			<p>Insurance Management System</p>
             </div>
             <ul>
-                <li><a href="../login.php">Back</a></li>    
+                <li><a href="../admin.php">Back</a></li>    
             </ul>
         </nav>   
 		<div class="container-fluid" style="padding-top: 12vh;">
